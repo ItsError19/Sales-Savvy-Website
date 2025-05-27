@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Savvy - Inventory Management Software</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="survey.ico" type="image/x-icon">
+</head>
+
+<!-- Popup Overlay -->
+<div class="popup-overlay" id="popup">
+    <div class="popup-message">
+        <h2>Welcome To The Future Of Inventory</h2>
+       <p>We Are Excited To Announce Sales Savvy Will Be Releasing Its First Mobile Application for the <strong>Android OS Version</strong></p>
+        <button id="continueButton">Continue</button>
+    </div>
+</div>
+
+
+<body>
+<!-- Premium Pro Popup -->
+<div class="premium-popup-overlay" id="premiumPopup" style="display:none;">
+    <div class="premium-popup-message">
+        <h2>Premium Pro Features</h2>
+        <ul>
+            <li><strong>1. Advanced Analytics & Predictive Insights</strong></li>
+            <li><strong>2. Multi-Location Support</strong></li>
+            <li><strong>3. Batch and Expiry Tracking (for industries like Pharmaceuticals)</strong></li>
+            <li><strong>4. Supplier Management & Purchase Order Automation</strong></li>
+            <li><strong>5. Mobile App Support</strong></li>
+            <li><strong>6. Role-Based Access Control</strong></li>
+            <li><strong>7. Custom Alerts & Notifications</strong></li>
+            <li><strong>8. Automated Stock Replenishment</strong></li>
+            <li><strong>9. Customer Management</strong></li>
+            <li><strong>10. Barcode/RFID Scanning Support</strong></li>
+            <li><strong>11. Cloud Backup & Data Recovery</strong></li>
+        </ul>
+        <a href="buy_link_here" class="buy-now-btn">Buy Now</a>
+        <button class="close-popup-btn" onclick="closePremiumPopup()">Close</button>
+    </div>
+</div>
+
+
+       <div class="cursor" id="cursor"></div>
+<div class="cursor-trail" id="cursorTrail"></div>
+
+    <header>
+        <div class="container header-container">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="survey.ico" alt="Sales Savvy Logo" style="width: 100px; height: auto;">
+            </div>
+
+            <!-- Title and Description -->
+            <div class="title">
+                <h1>Welcome to Sales Savvy</h1>
+                <p>The ultimate <strong>Inventory</strong> software for your business.</p>
+            </div>
+
+            <!-- Newsletter Popup -->
+<div class="newsletter-popup" id="newsletterPopup">
+    <div class="popup-content">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Get updates, tips, and insights directly to your inbox!</p>
+        <form id="newsletterForm">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+        <button class="close-popup" onclick="closeNewsletterPopup()">×</button>
+    </div>
+</div>
+
+<!-- Navigation -->
+<nav class="nav">
+    <ul>
+        <li><a href="#" class="newsletter-btn" onclick="openNewsletterPopup()">Newsletter</a></li>
+        <li><a href="premium_pro.html" class="premium-btn" target="_blank">Premium Pro</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=61572801020761" class="facebook-btn" target="_blank">Socials</a></li>
+        <li><a href="about_Us.html" class="facebook-btn" target="_blank">About Us</a></li>
+    </ul>
+</nav>
+
+        </div>
+    </header>
+
+    <main>
+        <section class="features">
+            <div class="container1">
+			<div class="circle-images">
+            <img src="fimg01.jpg" alt="Image 1" class="circle-image">
+            <img src="fimg02.jpg" alt="Image 2" class="circle-image">
+            <img src="fimg03.jpg" alt="Image 3" class="circle-image">
+			<img src="fimg04.jpg" alt="Image 4" class="circle-image"> <!-- New Image -->
+			
+        </div>
+
+                <h2>Streamline Your Business with Our Inventory Software</h2>
+                <ul>
+                    <li><strong>Real-Time Stock Tracking:</strong> Monitor your inventory levels in real-time to avoid shortages or overstocking.</li>
+                    <li><strong>Easy Integration:</strong> Seamlessly integrates with your existing systems, making it simple to adopt without disrupting your workflow.</li>
+                    <li><strong>Multi-Industry Support:</strong> Perfect for a wide range of <strong>industries, including Retail, Warehouse Inventory, Construction Materials, Military Armory, Pharmaceutical meds, and more...</strong></li>
+                    <li><strong>Automated Alerts:</strong> Get notified when stock levels are low or when new stock arrives.</li>
+                    <li><strong>Comprehensive Reporting:</strong> Generate reports to analyze inventory trends, sales, and performance to make data-driven decisions.</li>
+                    <center><h3><strong>The Imagination Is Endless</strong></h3></center>
+                </ul>
+            </div>
+        </section>
+
+       <section class="preview">
+    <div class="container">
+        <h1>Take a Look</h1>
+        <iframe 
+            class="fixed-iframe"
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/MXVw2WsbUDw?si=_zfWaWns3MPs0Ms0"
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+        <div class="slideshow-container">
+            <img src="img02.png" alt="Sales Savvy Preview" class="software-image fade-image" id="slide1">
+            <img src="img00.png" alt="Sales Savvy Preview" class="software-image fade-image" id="slide2">
+            <img src="img03.png" alt="Sales Savvy Preview" class="software-image fade-image" id="slide3">
+			<img src="img04.png" alt="Sales Savvy Preview" class="software-image fade-image" id="slide3">
+        </div>
+    </div>
+</section>
+
+<section class="old-android-versions">
+    <div class="container">
+        <h2>Old Versions</h2>
+        <div class="grid-container">
+            <!-- Left Section: Windows Versions -->
+            <div class="old-windows">
+                <h3>Old Windows OS Versions</h3>
+                <p>Download old Windows OS versions of <strong>Sales Savvy:</strong></p>
+                <ul class="version-links">
+                    <li><a href="https://www.mediafire.com/file/6y6jp0wxmqxkmzl/Sales_Savvy%2528V1.2%2529.exe/file" class="old-versions-btn" target="_blank">Download Sales Savvy v1.2 .exe (486.70KB)</a></li>
+                    <li><a href="https://www.mediafire.com/file/zn0f4vei1hzq8h1/SalesSavvy%2528v1.1%2529.exe/file" class="old-versions-btn" target="_blank">Download Sales Savvy v1.1 .exe (480.92KB)</a></li>
+                    <li><a href="https://www.mediafire.com/file/0mt5xqr57pztsgk/SalesSavvy_%2528V1%2529.exe/file" class="old-versions-btn" target="_blank">Download Sales Savvy v1.0 .exe (482.42KB)</a></li>
+                </ul>
+            </div>
+
+            <!-- Right Section: Android Versions -->
+            <div class="old-android">
+                <h3>Old Android Versions</h3>
+                <p>Download previous Android versions of <strong>Sales Savvy:</strong></p>
+                <ul class="version-links">
+                    <li><a href="https://www.mediafire.com/file/samplelink1/SalesSavvy_V1.2.apk/file" class="old-versions-btn" target="_blank">work in progress v1.2 .apk (12.5MB)</a></li>
+                    <li><a href="https://www.mediafire.com/file/samplelink2/SalesSavvy_V1.1.apk/file" class="old-versions-btn" target="_blank">work in progress v1.1 .apk (11.8MB)</a></li>
+                    <li><a href="https://www.mediafire.com/file/samplelink3/SalesSavvy_V1.apk/file" class="old-versions-btn" target="_blank">work in progress v1.0 .apk (10.3MB)</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+        <section class="download">
+            <div class="container">
+                <h2>Download For Free Now!</h2>
+                <p>Get started with Sales Savvy today!</p>
+                <a href="https://www.mediafire.com/file/6y6jp0wxmqxkmzl/Sales_Savvy%2528V1.2%2529.exe/file" class="download-btn" download target="_blank">Download Sales Savvy v1.2.exe (482.42KB)</a>
+            </div>
+        </section>
+		
+		
+		
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Sales Savvy Under (ESL) - Error Studio Labs Agency. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+    // Show the popup when the page loads
+   window.onload = function() {
+    const popup = document.getElementById('popup');
+    const continueButton = document.getElementById('continueButton');
+    const confettiContainer = document.querySelector('.confetti-container');
+    
+    // Display the popup when the page loads
+    popup.style.display = 'flex';
+
+    // Close popup and trigger confetti when 'Continue' is clicked
+    continueButton.addEventListener('click', function() {
+        closePopup();
+        triggerConfetti();
+    });
+
+    function closePopup() {
+        popup.style.display = 'none';
+    }
+
+    function triggerConfetti() {
+        // Function to create confetti
+        for (let i = 0; i < 200; i++) { // Create 200 pieces of confetti
+            setTimeout(createConfetti, i * 100); // Spread them out over time
+        }
+    }
+
+    function createConfetti() {
+        const confetti = document.createElement('div');
+        confetti.classList.add('confetti');
+
+        // Randomize the confetti colors
+        const colors = ['#ff5733', '#33ff57', '#3357ff', '#ff33a1', '#f1c40f'];
+        confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+
+        // Randomize the confetti position and animation speed
+        confetti.style.left = `${Math.random() * window.innerWidth}px`;
+        confetti.style.animationDuration = `${Math.random() * 3 + 2}s`;
+        confetti.style.animationDelay = `${Math.random() * 2}s`;
+
+        confettiContainer.appendChild(confetti);
+
+        // Remove confetti after animation ends
+        setTimeout(() => {
+            confetti.remove();
+        }, 5000); // Match with animation duration
+    }
+};
+
+	
+	// Open the newsletter popup
+function openNewsletterPopup() {
+    document.getElementById("newsletterPopup").style.display = "flex";
+}
+
+// Close the newsletter popup
+function closeNewsletterPopup() {
+    document.getElementById("newsletterPopup").style.display = "none";
+}
+
+// Handle form submission
+document.getElementById("newsletterForm").addEventListener("submit", function (event) {
+    event.preventDefault();
+    alert("Thank you for subscribing!");
+    closeNewsletterPopup();
+});
+
+	const cursor = document.getElementById("cursor");
+const cursorTrail = document.getElementById("cursorTrail");
+
+// Track mouse movement and update cursor position
+document.addEventListener("mousemove", (e) => {
+    const x = e.clientX;
+    const y = e.clientY;
+
+    cursor.style.left = `${x}px`;
+    cursor.style.top = `${y}px`;
+
+    cursorTrail.style.left = `${x}px`;
+    cursorTrail.style.top = `${y}px`;
+    cursorTrail.style.opacity = 1;
+
+    setTimeout(() => {
+        cursorTrail.style.opacity = 0;
+    }, 100);
+});
+
+
+
+	
+</script>
+
+ <script>
+        // Show the popup when the page loads
+        window.onload = function() {
+            const popup = document.getElementById('popup');
+            const continueButton = document.getElementById('continueButton');
+            const confettiContainer = document.createElement('div');
+            confettiContainer.classList.add('confetti-container');
+            document.body.appendChild(confettiContainer);
+
+            popup.style.display = 'flex';
+
+            continueButton.addEventListener('click', function() {
+                closePopup();
+                triggerConfetti();
+            });
+
+            function closePopup() {
+                popup.style.display = 'none';
+            }
+
+            function triggerConfetti() {
+                for (let i = 0; i < 200; i++) {
+                    setTimeout(createConfetti, i * 100);
+                }
+            }
+
+            function createConfetti() {
+                const confetti = document.createElement('div');
+                confetti.classList.add('confetti');
+                const colors = ['#ff5733', '#33ff57', '#3357ff', '#ff33a1', '#f1c40f'];
+                confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                confetti.style.left = `${Math.random() * window.innerWidth}px`;
+                confetti.style.animationDuration = `${Math.random() * 3 + 2}s`;
+                confetti.style.animationDelay = `${Math.random() * 2}s`;
+                confettiContainer.appendChild(confetti);
+
+                setTimeout(() => {
+                    confetti.remove();
+                }, 5000);
+            }
+        };
+		
+		// Open the Premium Pro Popup when the "Premium Pro" button is clicked
+document.querySelector('.premium-btn').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default link behavior
+    document.getElementById('premiumPopup').style.display = 'flex';
+});
+
+// Close the Premium Pro Popup
+function closePremiumPopup() {
+    document.getElementById('premiumPopup').style.display = 'none';
+}
+
+
+document.querySelector(".premium-btn").addEventListener("click", function() {
+    const premiumPopup = document.getElementById("premiumPopup");
+    premiumPopup.style.display = "flex";
+    setTimeout(() => premiumPopup.classList.add("show"), 50); // Add the show class to trigger animation
+});
+
+    </script>
+
+
+</body>
+</html>
+
+
+
